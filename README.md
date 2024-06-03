@@ -1,2 +1,1 @@
-# html_introduction
-Introdução à html com comandos básicos
+Desafio de projeto da Dio.me em criar uma página Html utilizando somente as tags aprendidas até o momento.
