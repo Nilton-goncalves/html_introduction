@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao HTML</title>
+</head>
+<body>
+    <h1>Introdução ao HTML</h1>
+    <hr>
+
+    <h2 id="indice">Indice</h2>
+    <ol>
+        <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+        <li><a href="#tags">Tags</a></li>
+        <li><a href="#atributos">Atributos das tags</a></li>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#listas">Lista ordenada e lista não ordenada</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#outras">Outras tags</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ol>
+
+<hr>
+
+    <h2 id="estrutura">Estrutura básica do HTML </h2> 
+    <p>A estrutura básica de uma página <strong>HTML</strong> consiste nas seguintes Tags:</p>
+    <ul>
+        <li><strong>HTML</strong> - indica ao navegador que tudo que se encontra desta Tag trata-se de um Html</li>
+        <li><strong>head</strong> - elementos que irão carregar antes que a página seja exibida ao usuário</li>
+        <li>Dentro da tag head há também a tag <strong>title</strong>, essa tag define o título da página</li>
+        <li><strong>body</strong> - tag que sinaliza o conteúdo que irá aparecer para o usuário</li>
+    </ul>
+
+<small><a href="#indice">(Voltar)</a></small>
+
+<hr>
+    <h2 id="tags">Tags</h2>
+    <p>Entre as tags principais existem diversas outras, como por exemplo:</p>
+    <ul>
+        <li><strong>i</strong> - deixa o texto em <i>itálico</i></li>
+        <li><strong>strong</strong> - deixa o texto em <strong>negrito</strong></li>
+    </ul>
+    <p>É possível usar uma tag dentro de outra pra dar mais de um efeito, por exemplo, usar a tag <strong>strong</strong> dentro da tag <strong>i</strong> para deiaxar um texto em <strong><i>negrito e itálico</i></strong> </p>
+    <p>A maioria das tags tem uma abertura e um fechamento usando barra <strong>/html</strong>, mas existem algumas exceções como por exemplo: </p>
+    <ul>
+        <li><strong>input</strong> - cria um campo de texto para usuário preencher</li>
+        <input type="text">
+        <li><strong>img</strong> - insere imagem dento da página</li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9_Wer6hxqk_oqXaGCVPR4v6wjyDh2L2vPqQ&s" alt="logo dio" width="300px">
+        <li><strong>hr</strong> - cria uma linha para dividir conteúdo</li>
+        <hr>
+    </ul>
+
+    <small><a href="#indice">(Voltar)</a></small>
+
+    <hr>
+
+<h2 id="atributos">Atributos das tags</h2>
+<p>Atributos são as propriedades que as tags possam ter, algumas de uso geral, outras, específicas</p>
+<ul>
+    <li><strong>id</strong> - identifica um elemento</li>
+    <li><strong>style</strong> - específico do <strong>CSS</strong> pode estilizar um elemento dento do <strong>html</strong></li>
+    <li><strong>class</strong> - usado para padronização de um elemento definido pelo <strong>CSS</strong></li>
+
+    <ul>
+        <li><strong>type</strong> - específico da tag <strong>input</strong>, define o uso do campo criado</li>
+        <li><strong>src</strong> - específico da tag <strong>img</strong>, indica caminho da imagem a ser inserida no site</li>
+    </ul>
+</ul>
+
+<small><a href="#indice">(Voltar)</a></small>
+
+<hr>
+
+<h2 id="textos">Textos</h2>
+<p>Existem diversas tags relacionadas à tipografia, as principais são:</p>
+<ul>
+    <li><strong>h1 até h6</strong> - define o título da página, sendo o título principal definido com a tag <strong>h1</strong>, e os subtítulos recebendo <strong>h2 à h6</strong></li>
+    <li><strong>p</strong> - tag que define um <strong>parágrafo</strong></li>
+    <li><strong>strong</strong> - coloca texto em <strong>negrito</strong></li>
+    <li><strong>i</strong> - coloca texto em <strong><i>itálico</i></strong></li>
+    <li><strong>u</strong> - coloca uma linha embaixo do <strong><u>texto</u></strong></li>
+    <li><strong>mark</strong> - destaca texto como se fosse uma caneta <mark>marca texto</mark></li>
+    <li><strong>sup</strong> - coloca texto em sobrescrito, como por exemplo o símbolo de <strong>marca registrada <sup>R</sup></strong></li>
+</ul>
+
+<small><a href="#indice">(Voltar)</a></small>
+
+<hr>
+
+<h2 id="listas">Lista ordenada e lista não ordenada</h2>
+<ul>
+    <li><strong>ol</strong> - tag que define uma lista ordenada</li>
+    <li><strong>ul</strong> - tag que define uma lista não ordenada</li>
+    <p>As listas não recebem texto comum dentro delas, elas necessitam de uma tag <strong>filha</strong>, a tag <strong>li</strong>, que define os itens da lista</p>
+    <p>As listas também são usadas para criar um <strong>menu</strong>, sendo posteriormente configuradas no <strong>CSS</strong></p>
+</ul>
+
+<small><a href="#indice">(Voltar)</a></small>
+
+<hr>
+
+<h2 id="links">Links</h2>
+<p>Os links são responsáveis pela navegação entre páginas, outros sites, ou até memo entre itens dentro de uma mesma página. Usamos a tag <strong>a</strong> para definir um link, ela tem um atributo específico e obrigatório, o <strong>href</strong>, que define o link a ser usado na tag</p>
+
+<p>Outros atributos que podem ser usados dentro da tag a são:</p>
+<ul>
+    <li>o <strong>target</strong>, que define que o link deve ser aberto em uma nova aba, através da opção blank</li>
+    <li>o <strong>title</strong>, que mostra uma <title>legenda</title>legenda ao colocar o cursor sobre o link, a qual pode ajudar na navegação</li>
+</ul>
+
+<small><a href="#indice">(Voltar)</a></small>
+
+<hr>
+
+<h2 id="outras">Outras tags:</h2>
+<ul>
+    <li><strong>small</strong> - cria um texto <small>pequeno</small></li>
+    <li><strong>del</strong> - intervalo de texto excluído do <del>documento</del></li>
+    <li><strong>abbr</strong> - mostra significado de uma abreviação ao passar cursor do mouse sobre a palavra como por exemplo <abbr title="HyperText Markup Language">html</abbr></li>
+    <li><strong>blockquote</strong> - <blockquote>"marca texto como uma citação"</blockquote></li>
+    <p>Existem outras tags, com por exemplo <strong>font</strong>, que no <strong>html5</strong> deixou de ser usada, substituída pela configuração no <strong>CSS</strong></p>
+</ul>
+
+<small><a href="#indice">(Voltar)</a></small>
+
+<hr>
+
+<h2 id="referencias">Referências</h2>
+
+<ul>
+    <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">W3Schools</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">MDN Web Docs</a></li>
+    <li><a href="https://html.com/" target="_blank">html.com</a></li>
+</ul>
+
+
+<small><a href="#indice">(Voltar)</a></small>
+
+</body>
+</html>
